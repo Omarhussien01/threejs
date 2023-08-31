@@ -26,7 +26,7 @@ const Home = () => {
           </motion.header>
 
           <motion.div className="home-content" {...headContainerAnimation}>
-            <motion.div className="head-text" {...headContentAnimation}>
+            <motion.div className="head-text" {...headTextAnimation}>
               <h1>
                 LET'S <br className="xl:block hidden" />
                 DO IT.
@@ -38,14 +38,12 @@ const Home = () => {
                 customization tool powered by AI.
               </p>
               <CustomButton
-              type='filled'
-              title='Customize it'
-              handleClick = {()=>state.intro=false}
-              customStyle ='w-fit px-4 py-2.5 font-bold text-sm '
+                type="filled"
+                title="Customize it"
+                handleClick={() => (state.intro = false)}
+                customStyle="w-fit px-4 py-2.5 font-bold text-sm "
               />
             </motion.div>
-
-
           </motion.div>
         </motion.section>
       )}
