@@ -43,7 +43,6 @@ const Customizer = () => {
             prompt={prompt}
             setPrompt={setPrompt}
             generatingImg={generatingImg}
-            handleSubmit={handleSubmit}
           />
         );
       default:
